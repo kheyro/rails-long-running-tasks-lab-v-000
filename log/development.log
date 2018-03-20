@@ -2159,3 +2159,36 @@ Completed 200 OK in 257ms (Views: 249.3ms | ActiveRecord: 3.9ms)
             FROM sqlite_temp_master
             WHERE name='index_songs_on_artist_id' AND type='index'
 [0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "The Killers"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 3], ["title", "Mr. Brightside"], ["created_at", "2018-03-20 13:47:42.536161"], ["updated_at", "2018-03-20 13:47:42.536161"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "The Killers"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 3], ["title", "Jenny Was a Friend of Mine"], ["created_at", "2018-03-20 13:47:42.542854"], ["updated_at", "2018-03-20 13:47:42.542854"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Tommy Tutone"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 4], ["title", "Jenny"], ["created_at", "2018-03-20 13:47:42.548271"], ["updated_at", "2018-03-20 13:47:42.548271"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Daft Punk"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 5], ["title", "Around the World"], ["created_at", "2018-03-20 13:47:42.553373"], ["updated_at", "2018-03-20 13:47:42.553373"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Daft Punk"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 5], ["title", "Harder, Better, Faster, Stronger"], ["created_at", "2018-03-20 13:47:42.558523"], ["updated_at", "2018-03-20 13:47:42.558523"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Pixies"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 6], ["title", "Where is My Mind?"], ["created_at", "2018-03-20 13:47:42.563868"], ["updated_at", "2018-03-20 13:47:42.563868"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Pixies"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 6], ["title", "Gigantic"], ["created_at", "2018-03-20 13:47:42.569226"], ["updated_at", "2018-03-20 13:47:42.569226"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Pixies"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 6], ["title", "Monkey Gone to Heaven"], ["created_at", "2018-03-20 13:47:42.574264"], ["updated_at", "2018-03-20 13:47:42.574264"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
