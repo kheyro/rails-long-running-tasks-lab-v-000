@@ -51,7 +51,6 @@ class SongsController < ApplicationController
     CSV.foreach(params[:file].path, headers: true) do |song|
       if !Song.find_by(title: song[0])
         song = Song.create(title: song[0], artist_name: song[1])
-        song.artist = artist
         song.save
       end
     end
